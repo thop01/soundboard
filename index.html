@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Soundboard</title>
+    <style>
+        html,body{
+            height:100%;
+            width:100%;
+            padding:0;
+            margin:0;
+        }
+        body{
+            display:grid;
+            grid-template-columns: 50vw 50vw;
+            grid-template-rows: 50vh 50vh;
+        }
+
+        button{
+
+        }
+    </style>
+</head>
+<body>
+    <button id="die">die</button>  
+    
+    <button id="hit">hit</button>  
+    
+    <button id="flap">flap</button>  
+    
+    <button id="point">point</button>  
+    <script>
+        const dieSound = new Audio("sounds/die.mp3");
+        const hitSound = new Audio("sounds/hit.mp3");
+        const flapSound = new Audio("sounds/flap.mp3");
+        const pointSound = new Audio("sounds/point.mp3");
+        
+        die.onclick = (event) =>  dieSound.play();
+        hit.onclick = (event) =>  hitSound.play() ;
+        flap.onclick = (event) =>  flapSound.play() ;
+        point.onclick = (event) =>  pointSound.play() ;
+
+
+    </script>
+</body>
+</html>
