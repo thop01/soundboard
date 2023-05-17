@@ -36,10 +36,10 @@
         const flapSound = new Audio("sounds/flap.mp3");
         const pointSound = new Audio("sounds/point.mp3");
         
-        die.onclick = (event) =>  dieSound.play();
-        hit.onclick = (event) =>  hitSound.play() ;
-        flap.onclick = (event) =>  flapSound.play() ;
-        point.onclick = (event) =>  pointSound.play() ;
+        die.onclick = (event) =>  new Audio("sounds/die.mp3").play();
+        hit.onclick = (event) =>  new Audio("sounds/hit.mp3").play();
+        flap.onclick = (event) => new Audio("sounds/flap.mp3").play(); 
+        point.onclick = (event) => new Audio("sounds/point.mp3").play();
     </script>
 </body>
 </html>
